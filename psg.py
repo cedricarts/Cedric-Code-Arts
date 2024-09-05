@@ -1,7 +1,11 @@
 #Password Generator
 import random
- answer = input("Do you want a password?:" )
+import tkinter
+import sys
+
+
 def GeneratePassword():
+  answer = input("Do you want a password?:" )
     if answer == 'yes':
         # Allowing user to change length of password
         length = input("How long should the password be: ")
@@ -16,8 +20,7 @@ def GeneratePassword():
             password = password + random.choices(pass1)[0]
     else:
         print("Goodbye, have a great day!!")
-
-GeneratePassword()
 #Displaying password to user
 print("Your new password is\n: ", password)
+GeneratePassword()
     
