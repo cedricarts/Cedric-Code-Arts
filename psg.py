@@ -1,12 +1,13 @@
 # Password Generator By Cedric Arts
 
+# Importing necessary modules/libraries
 import random
 import tkinter as tk
 from tkinter import ttk, messagebox
 import json
 import os
 
-# Create ThemedTk instance with a default theme
+# Window
 app = tk.Tk()
 app.geometry('500x500')
 app.title("Password Generator By CA")
